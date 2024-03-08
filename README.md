@@ -38,3 +38,33 @@ We provided example scripts for No-KD and KD strategies:
 - [NoKD Models](https://github.com/MinhDucBui/revisiting_distillation/tree/main/No_Distillation/slurm/input/pretraining)
 - [KD Models](https://github.com/MinhDucBui/revisiting_distillation/tree/main/Distillation_Strategies/slurm/input/pretraining)
 
+E.g. pretraining NoKD 6-Layer & finetuning+evaluation on GLUE
+```bash
+# [OPTIONAL] activate conda environment
+conda activate revisiting_distillation
+
+# Change to NoKD Folder
+cd No_Distillation
+
+# Pretraining: NoKD 6-Layer
+sh slurm/input/pretraining/6layer_1epoch.sh
+
+# Finetuning on GLUE
+sh slurm/input/glue/finetuning.sh
+```
+
+E.g. pretraining DistillBERT 6-Layer & finetuning+evaluation on GLUE
+
+```bash
+# [OPTIONAL] activate conda environment
+conda activate revisiting_distillation
+
+# Change to NoKD Folder
+cd Distillation_Strategies
+
+# Pretraining: NoKD 6-Layer
+sh slurm/input/pretraining/distillbert_6layer_1epoch.sh
+
+# Finetuning on GLUE
+sh slurm/input/glue/finetuning.sh
+```
