@@ -12,7 +12,7 @@
 ## 📌&nbsp;&nbsp;Introduction
 Our research compares conventional pretraining to knowledge distillation strategies for masked language modelling in a fair setup with regards to compute as well as pretraining data.
 
-Our repository consists of [How-to-distill-your-BERT](https://github.com/mainlp/How-to-distill-your-BERT/tree/main) and [academic-budget-bert](https://github.com/IntelLabs/academic-budget-bert)
+Our repository consists of [How-to-distill-your-BERT](https://github.com/mainlp/How-to-distill-your-BERT/tree/main) and [academic-budget-bert](https://github.com/IntelLabs/academic-budget-bert).
 
 ## 🚀&nbsp;&nbsp;Quickstart
 
