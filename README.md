@@ -12,6 +12,8 @@
 ## 📌&nbsp;&nbsp;Introduction
 Our research compares conventional pretraining to knowledge distillation strategies for masked language modelling in a fair setup with regards to compute as well as pretraining data.
 
+Our repository consists of [How-to-distill-your-BERT](https://github.com/mainlp/How-to-distill-your-BERT/tree/main) and [academic-budget-bert](https://github.com/IntelLabs/academic-budget-bert)
+
 ## 🚀&nbsp;&nbsp;Quickstart
 
 Configure your environment first.
@@ -30,13 +32,13 @@ pip install -r requirements.txt
 # https://pytorch.org/get-started/
 ```
 
-First, crawl English Wikipedia and download the BookCorpus, see [here](https://github.com/MinhDucBui/revisiting_distillation/tree/main/No_Distillation/dataset).
+First, crawl English Wikipedia and download the BookCorpus, see [here](./No_Distillation/dataset).
 
 
 We provided example scripts for No-KD and KD strategies:
 
-- [NoKD Models](https://github.com/MinhDucBui/revisiting_distillation/tree/main/No_Distillation/slurm/input/pretraining)
-- [KD Models](https://github.com/MinhDucBui/revisiting_distillation/tree/main/Distillation_Strategies/slurm/input/pretraining)
+- [NoKD Models](./No_Distillation/slurm/input/pretraining)
+- [KD Models](./Distillation_Strategies/slurm/input/pretraining)
 
 E.g. pretraining NoKD 6-Layer & finetuning+evaluation on GLUE
 ```bash

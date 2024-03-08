@@ -2,7 +2,7 @@
 # ...
 
 # Run script
-/home/ma/ma_ma/ma_mbui/.conda/envs/izsak2/bin/deepspeed  run_pretraining.py \
+deepspeed  run_pretraining.py \
   --model_type bert-mlm --tokenizer_name bert-large-uncased \
   --hidden_act gelu \
   --hidden_size 1024 \

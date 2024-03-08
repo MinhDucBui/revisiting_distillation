@@ -183,52 +183,6 @@ def train(
     )
 
     pretrain_dataset_provider.prefetch_shard(index + 1)
-    #print(model.network)
-    #print(teacher)
-    #from transformers import BertTokenizer, BertForMaskedLM
-
-    # Load pre-trained BERT model and tokenizer
-    #model_name = "/pfs/work7/workspace/scratch/ma_mbui-minbui/bert-large-uncased"
-    #tokenizer = BertTokenizer.from_pretrained(model_name)
-
-    # Example text with a masked word
-    #text = "The car sat on the [MASK]."
-
-    # Tokenize the input text
-    #tokens = tokenizer(text)
-    
-    #print(tokens)
-    #das
-    #masked_index = tokens.index('[MASK]')
-
-    # Convert tokens to IDs
-    #token_ids = tokenizer.convert_tokens_to_ids(tokens)
-
-    # Convert to PyTorch tensor
-    #input_tensor = torch.tensor([[token_ids]]).permute(0, 2, 1)
-    #print(input_tensor)
-    #print(input_tensor[0].shape)
-    #input_tensor.to(args.device)
-    #input_tensor = tuple(input_tensor)
-    #print(input_tensor)
-    #print(input_tensor[0].shape)
-    # Get predictions from the BERT model
-    #with torch.no_grad():
-    #    outputs = teacher(input_tensor)
-
-    # Get the predicted probabilities for the masked word
-    #predictions = outputs.logits[0, masked_index].softmax(dim=0)
-
-    # Get the predicted token ID with the highest probability
-    #predicted_token_id = torch.argmax(predictions).item()
-
-    # Convert the predicted token ID to the actual word
-    #predicted_word = tokenizer.convert_ids_to_tokens([predicted_token_id])[0]
-
-    #print("Original text:", text)
-    #print("Masked text:", " ".join(tokens))
-    #print("Predicted word:", predicted_word)
-    #asd
     
     model.train()
     
